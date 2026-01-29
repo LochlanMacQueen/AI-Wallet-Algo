@@ -1,0 +1,35 @@
+{
+  "name": "solana-memecoin-machine",
+  "version": "1.0.0",
+  "description": "Solana meme-coin detection, scoring, and alerting system",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node src/index.js",
+    "server": "node src/server.js",
+    "enrich": "node src/workers/enrich_worker.js",
+    "score": "node src/workers/score_worker.js",
+    "bot": "node src/telegram/bot.js",
+    "db:print": "cat src/db/schema.sql",
+    "test:webhook": "node scripts/test_webhook.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.0",
+    "fastify": "^4.25.0",
+    "node-telegram-bot-api": "^0.64.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "solana",
+    "memecoin",
+    "detection",
+    "helius",
+    "telegram"
+  ],
+  "license": "MIT"
+}
