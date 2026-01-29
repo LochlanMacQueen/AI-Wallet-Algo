@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.39.0",
+    "dotenv": "^16.3.1",
     "fastify": "^4.25.0",
     "node-telegram-bot-api": "^0.64.0",
     "zod": "^3.22.4"
